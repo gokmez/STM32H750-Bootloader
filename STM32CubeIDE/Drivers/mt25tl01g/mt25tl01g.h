@@ -122,10 +122,10 @@ typedef enum
 /**
   * @brief  MT25TL01G Configuration
   */
-#define MT25TL01G_FLASH_SIZE                  0x8000000 /* 2 * 512 MBits => 2 * 64MBytes => 128MBytes*/
-#define MT25TL01G_SECTOR_SIZE                 0x10000   /* 2 * 1024 sectors of 64KBytes */
-#define MT25TL01G_SUBSECTOR_SIZE              0x1000    /* 2 * 16384 subsectors of 4kBytes */
-#define MT25TL01G_PAGE_SIZE                   0x100     /* 2 * 262144 pages of 256 bytes */
+#define MT25TL01G_FLASH_SIZE                  0x4000000 /* 1 * 512 MBits => 1 * 64MBytes => 64MBytes*/
+#define MT25TL01G_SECTOR_SIZE                 0x10000   /* 1 * 1024 sectors of 64KBytes */
+#define MT25TL01G_SUBSECTOR_SIZE              0x1000    /* 1 * 16384 subsectors of 4kBytes */
+#define MT25TL01G_PAGE_SIZE                   0x100     /* 1 * 262144 pages of 256 bytes */
 
 #define MT25TL01G_DIE_ERASE_MAX_TIME          460000
 #define MT25TL01G_SECTOR_ERASE_MAX_TIME       1000
