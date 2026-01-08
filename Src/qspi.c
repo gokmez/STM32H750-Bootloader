@@ -94,8 +94,8 @@ uint32_t QSPI_Startup(uint32_t Mode)
   /* QSPI initialization */
   /* Old-ClockPrescaler set to 1, so QSPI clock = 200MHz / (1+3) = 50MHz */
   /* New-							 QSPI clock = 200MHz / (6+2) = 25MHz */
-  QSPIHandle.Init.ClockPrescaler     = 6;
-  QSPIHandle.Init.FifoThreshold      = 2;
+  QSPIHandle.Init.ClockPrescaler     = 10;
+  QSPIHandle.Init.FifoThreshold      = 4;
   QSPIHandle.Init.SampleShifting     = QSPI_SAMPLE_SHIFTING_HALFCYCLE;
   QSPIHandle.Init.FlashSize          = POSITION_VAL(MT25TL01G_FLASH_SIZE) - 1;
   QSPIHandle.Init.ChipSelectHighTime = QSPI_CS_HIGH_TIME_4_CYCLE;
